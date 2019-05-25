@@ -1,0 +1,32 @@
+#include<stdio.h>
+#include<string.h>
+
+int nhap(int a[], int n){
+	for(int i=0; i<n; i++){
+	printf("\na[%d]", i+1);
+	scanf("%d", &a[i]);
+	}
+}
+long Tong(int a[], int n){
+	for(int i=0; i<n; i++){
+		int sum=0;
+		if(a[i]>0)
+		sum+=a[i];
+	return sum;
+	}
+}
+
+void xuat(int a[], int n){
+	for(int i=0; i<n; i++)
+	printf("%2d", a[i]);
+	printf("\n");
+}
+int main(){
+	int i,j,n,a[100];
+	printf("Nhap n: ");
+	scanf("%d",&n);
+	nhap(a,n);
+	xuat(a,n);
+	printf("%d", xuat);
+	return 0;
+}
